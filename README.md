@@ -5,7 +5,7 @@ made by: Raditya Naufal Abiyu (13521022)
 
 ## How to Compile
     - open the repo
-    - `cd src `
+    - `cd src`
     - `gcc 24solver.c -o ../bin/24solver`
 
 ## How to Use
