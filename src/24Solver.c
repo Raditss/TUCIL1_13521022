@@ -6,6 +6,7 @@
 
 #define TARGET 24
 
+
 int get_card_value(char card[]) {
     if (strcmp(card, "j") == 0) return 11;
     else if (strcmp(card, "J") == 0) return 11;
@@ -146,7 +147,22 @@ void check_equation(int a, int b, int c, int d) {
         }
     }
 
+
+void splash(){
+printf("\n");
+printf("\n");
+printf("██████  ██   ██     ███████  ██████  ██      ██    ██ ███████ ██████  \n");
+printf("     ██ ██   ██     ██      ██    ██ ██      ██    ██ ██      ██   ██ \n");
+printf(" █████  ███████     ███████ ██    ██ ██      ██    ██ █████   ██████  \n");
+printf("██           ██          ██ ██    ██ ██       ██  ██  ██      ██   ██ \n");
+printf("███████      ██     ███████  ██████  ███████   ████   ███████ ██   ██ \n");
+printf("\n");
+printf("\n");
+}
+
+
 int main() {
+    splash();
     int a, b, c, d, temp;
     char at, bt, ct, dt;
     srand(time(NULL));
@@ -157,7 +173,6 @@ int main() {
     scanf("%d", &temp);
     printf("\n");
     if (temp == 1) {
-        printf("input 4 numbers: ");
         char card1[10], card2[10], card3[10], card4[10];
         printf("Enter four cards: ");
         scanf("%s %s %s %s", card1, card2, card3, card4);
